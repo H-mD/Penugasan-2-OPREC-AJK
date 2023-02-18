@@ -77,7 +77,7 @@ sudo debconf-set-selections <<< "mysql-server mysql-server/root_password_again p
 sudo mysql -u kelompok2 -p
 CREATE DATABASE KELOMPOK2;
 CREATE USER 'kelompok2'@'%' IDENTIFIED BY 'kelompok2';
-GRANT ALL PRIVILEGES ON DATABASE_NAME.* TO 'kelompok2'@'%' WITH GRANT OPTION;
+GRANT ALL PRIVILEGES ON KELOMPOK2.* TO 'kelompok2'@'%' WITH GRANT OPTION;
 FLUSH PRIVILEGES;
 
 # app env setting
